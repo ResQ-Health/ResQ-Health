@@ -1,4 +1,4 @@
-import LocationSearch from './LocationSearch'
+// import LocationSearch from './LocationSearch'
 
 const Hero = () => {
     const items = ['Find', 'Book', 'Scan', 'Resolve']
