@@ -57,6 +57,8 @@ const Hero = () => {
                         Consult with Experts
                     </h1>
                 </div>
+
+                <img src="/chat.png" alt="hero" className='absolute bottom-[-30px] right-0 size-[56px]' width={1000} height={1000} />
             </div>
         </div>
     )
