@@ -31,7 +31,7 @@ const Hero = () => {
                     </ul>
                 </div>
 
-                <div className='flex flex-col md:flex-row rounded-[16px] md:rounded-full mt-[16px] bg-[#fff] w-[90%] md:w-[800px] mx-auto items-stretch md:items-center gap-4 md:gap-[23px] p-4 md:px-6 shadow-lg'>
+                {/* <div className='flex flex-col md:flex-row rounded-[16px] md:rounded-full mt-[16px] bg-[#fff] w-[90%] md:w-[800px] mx-auto items-stretch md:items-center gap-4 md:gap-[23px] p-4 md:px-6 shadow-lg'>
                     <div className='flex w-full md:w-auto items-center gap-[8px] border-b md:border-b-0 pb-4 md:pb-0'>
                         <div className='flex items-center justify-center w-[40px] h-[40px] bg-[#F6F8FA] rounded-full'>
                             <img src="./medical.png" className='size-[24px]' alt="search" />
@@ -46,10 +46,14 @@ const Hero = () => {
                     <div className='w-full md:w-auto pt-2 md:pt-0'>
                         <LocationSearch />
                     </div>
-                </div>
+                </div> */}
 
                 <div className='flex text-[#FFFFFF] text-center text-[16px] md:text-[20px] leading-[24px] md:leading-[32px] justify-center items-center mt-[26px] flex-col w-full gap-[16px] mx-auto px-4'>
-                    <h1>Get same-day appointments at 2,500+ verified imaging facilities and <br className='hidden md:block' /> instant access to board-certified specialists <br className='hidden md:block' />
+                    <h1 className='text-center leading-[24px]'>Get same-day appointments at 2,500+ verified imaging facilities and
+                        <br />
+                        instant access to board-certified specialists
+                        <br />
+                        <br />
                         Consult with Experts
                     </h1>
                 </div>
