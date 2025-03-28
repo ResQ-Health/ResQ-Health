@@ -6,4 +6,6 @@ services:
     startCommand: npm run preview
     envVars:
       - key: NODE_VERSION
-        value: 18.18.0 # Explicitly set to a supported version 
+        value: 18.18.0 # Explicitly set to a supported version
+      - key: PORT
+        value: 10000 

@@ -9,43 +9,33 @@ const footerLinks: FooterLink[] = [
         links: [
             "CT Scan",
             "MRI Scan",
+            "Mammogram",
             "X-Ray",
-            "Blood Tests",
-            "Ultrasound",
-            "ECG"
+            "Consultation",
         ]
     },
     {
         title: "About Us",
         links: [
-            "Our Story",
-            "Our Mission",
-            "Our Team",
-            "Careers",
-            "Press",
-            "Blog"
+            "FAQ",
+            "ResQ Story",
+            "Partners",
         ]
     },
     {
-        title: "Support",
+        title: "Business",
         links: [
-            "Contact Us",
-            "Help Center",
-            "FAQs",
-            "Terms of Service",
-            "Privacy Policy",
-            "Patient Rights"
+            "Specialists",
+            "Hospitals",
+            "Imaging Centers",
+            "Referring Partners",
         ]
     },
     {
-        title: "Resources",
+        title: "Contact",
         links: [
-            "Health Tips",
-            "Test Guide",
-            "Insurance Info",
-            "Patient Stories",
-            "Medical Articles",
-            "Health News"
+            "Hello@resqhealthafrica.com",
+            "+234707277983",
         ]
     }
 ];

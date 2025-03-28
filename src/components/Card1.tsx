@@ -10,7 +10,7 @@ interface Card1Props {
 
 const Card1: React.FC<Card1Props> = ({ title, description, description2, items, image }) => {
     return (
-        <div className="flex md:flex-row mx-auto max-w-[1312px] flex-col border-[2px] border-[#E1E3E6] bg-[#F6F8FA] rounded-[6px] px-[24px] md:px-[64px] items-center justify-between gap-[155px] py-12">
+        <div className="flex md:flex-row mx-auto max-w-[1312px] flex-col border-[2px] border-[#E1E3E6] bg-[#F6F8FA] rounded-[6px] px-[24px] md:px-[64px] items-center justify-between gap-[8px] md:gap-[155px] py-12">
             <div className="flex-1 max-w-[552px]">
                 <h2 className="text-[32px] md:text-[40px] font-[500] text-[#06202E] mb-6">{title}</h2>
                 <p className="text-[20px] leading-[32px] mb-[16px] text-[#4B5563]">{description}</p>
