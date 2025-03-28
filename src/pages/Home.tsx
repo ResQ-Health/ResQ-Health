@@ -135,7 +135,7 @@ const Home = () => {
 
                 <div className='mt-[40px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
                     {articles.slice(0, showAll ? articles.length : 3).map((article, index) => (
-                        <div key={index} className='flex flex-col text-[#586A73] bg-[#F6F8FA] h-[428px] gap-[16px]'>
+                        <div key={index} className='flex flex-col text-[#586A73] bg-[#F6F8FA] min-h-[428px] gap-[16px]'>
                             <img src={article.image} className='w-full rounded-t-[8px] h-[216px] object-cover' alt={article.title} />
                             <div className='pl-[16px]'>
                                 <div className=''>
