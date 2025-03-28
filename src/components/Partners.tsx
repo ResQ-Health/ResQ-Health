@@ -1,13 +1,21 @@
 const Partners = () => {
     const logos = [
-        { src: '/mari.png', alt: 'marigold' },
-        { src: '/erom.png', alt: 'Erom' },
-        { src: '/reliance.png', alt: 'Reliance HMO' },
+        { src: '/p1.png', alt: 'marigold' },
+        { src: '/p2.png', alt: 'Erom' },
+        { src: '/p3.png', alt: 'Reliance HMO' },
         { src: '/foremost.png', alt: 'foremost' },
-        { src: '/mari.png', alt: 'marigold' },
-        { src: '/erom.png', alt: 'Erom' },
-        { src: '/reliance.png', alt: 'Reliance HMO' },
+        { src: '/p4.', alt: 'marigold' },
+        { src: '/p1.png', alt: 'marigold' },
+        { src: '/p2.png', alt: 'Erom' },
+        { src: '/p3.png', alt: 'Reliance HMO' },
         { src: '/foremost.png', alt: 'foremost' },
+        { src: '/p4.', alt: 'marigold' },
+        { src: '/p1.png', alt: 'marigold' },
+        { src: '/p2.png', alt: 'Erom' },
+        { src: '/p3.png', alt: 'Reliance HMO' },
+        { src: '/foremost.png', alt: 'foremost' },
+        { src: '/p4.', alt: 'marigold' },
+
     ];
 
     return (
