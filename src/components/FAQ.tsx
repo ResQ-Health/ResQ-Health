@@ -12,7 +12,7 @@ interface FAQCategory {
 
 const faqData: FAQCategory[] = [
     {
-        name: "About Us",
+        name: "About",
         items: [
             {
                 question: "What is ResQ?",
@@ -29,7 +29,7 @@ const faqData: FAQCategory[] = [
         ]
     },
     {
-        name: "Our Services",
+        name: "Services",
         items: [
             {
                 question: "What types of tests can I book?",
