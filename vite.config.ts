@@ -13,5 +13,8 @@ export default defineConfig({
     port: process.env.PORT ? Number(process.env.PORT) : 10000,
     host: "0.0.0.0",
     allowedHosts: ["resq-health-staging.onrender.com", ".onrender.com"]
+  },
+  build: {
+    outDir: 'dist', // or whatever your output directory should be
   }
 })
