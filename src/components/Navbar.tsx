@@ -18,18 +18,19 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop Menu */}
-                <div className='hidden md:block'>
+                {/* <div className='hidden md:block'>
                     <ul className='flex items-center gap-[32px]'>
                         <li><Link to="/services">Services</Link></li>
                         <li><Link to="/about">About Us</Link></li>
                         <li><Link to="/business">Business</Link></li>
                     </ul>
-                </div>
+                </div> */}
 
                 {/* Phone Button - Desktop */}
                 <div className='hidden md:block'>
                     <button className='flex items-center gap-[8px] bg-[#06202E] text-[#FFFFFF] px-[16px] py-[8px] rounded-[8px]'>
-                        +2347072779831
+                        {/* +2347072779831 */}
+                        Talk-to-ResQ
                         <img src={phone} alt="phone" className='w-[16px] h-[16px]' />
                     </button>
                 </div>

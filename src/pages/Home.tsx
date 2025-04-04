@@ -104,11 +104,11 @@ const Home = () => {
         <div className='w-full overflow-x-hidden'>
             <Hero />
             <Partners />
-            <div className='w-full px-[24px] md:px-[64px]'>
+            <div className='w-full px-[64px]'>
                 <Card1 description2='' items={[]} title="Reduce wait time with ResQ" description="We understand that timely diagnosis is crucial for effective treatment. ResQ connects you with healthcare facilities offering same-day or next-day appointments for various diagnostic services:" image="./card1a.png" />
                 <div className='flex  md:flex-row flex-col justify-center gap-[24px] items-center mt-[32px]' >
-                    <Card2 title="Book the Right Test Quickly" description1="" description2="Book Your Test Now" list={["Personalized recommendations on your tests and providers", "Step by step guidance from booking to  confirmation."]} image="./cardb1.png" />
-                    <Card2 title="Trusted by Your Community, Across the country" description1="Our extensive network includes over 1,500+ verified facilities and medical professionals nationwide." description2="" list={["Wide geographical coverage ensures there's always a facility nearby.", "All providers are vetted to ensure high-quality care standards."]} image="./cardb2.png" />
+                    <Card2 title="Book the Right Test Quickly" description1="" description2="Book Your Test Now" list={["Personalized recommendations on your tests and providers", "Step by step guidance from booking to  confirmation."]} image="./cardb2.png" />
+                    <Card2 title="Trusted by Your Community, Across the country" description1="Our extensive network includes over 1,500+ verified facilities and medical professionals nationwide." description2="" list={["Wide geographical coverage ensures there's always a facility nearby.", "All providers are vetted to ensure high-quality care standards."]} image="./cardb1.png" />
                 </div>
                 <div className='mt-[32px]'>
                     <Card1 title="Support Beyond Diagnosis" description2="Talk to your Resq Guide" description="At Resq, we believe in providing ongoing support beyond your initial consultation." items={[`Schedule follow-up appointments based on specialist recommendations`, `Step by step guidance from booking to  confirmation.`, `Dedicated patient support team available via phone/email/chat.`, `24/7 concierge for questions and guidance`]} image="./card11.png" />
