@@ -4,6 +4,7 @@ services:
     env: node
     buildCommand: npm install && npm run build
     startCommand: npm run preview
+    staticPublishPath: ./dist  # Specify the correct build output directory
     envVars:
       - key: NODE_VERSION
         value: 18.18.0 # Explicitly set to a supported version
