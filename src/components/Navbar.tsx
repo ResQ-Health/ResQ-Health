@@ -10,6 +10,10 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen)
     }
 
+    const handleCallClick = () => {
+        window.location.href = 'tel:+2347072779831';
+    }
+
     return (
         <div className='w-full bg-[#FFFFFF] px-4 sm:px-6 md:px-[64px] py-[14px]'>
             <div className='flex justify-between items-center'>
@@ -28,8 +32,10 @@ const Navbar = () => {
 
                 {/* Phone Button - Desktop */}
                 <div className='hidden md:block'>
-                    <button className='flex items-center gap-[8px] bg-[#06202E] text-[#FFFFFF] px-[16px] py-[8px] rounded-[8px]'>
-                        {/* +2347072779831 */}
+                    <button
+                        onClick={handleCallClick}
+                        className='flex items-center gap-[8px] bg-[#06202E] text-[#FFFFFF] px-[16px] py-[8px] rounded-[8px] hover:bg-[#1a3a4e] transition-colors'
+                    >
                         Talk-to-ResQ
                         <img src={phone} alt="phone" className='w-[16px] h-[16px]' />
                     </button>
@@ -63,8 +69,11 @@ const Navbar = () => {
                         <li className='py-2'><Link to="/business">Business</Link></li> */}
                     </ul>
                     <div className='mt-4'>
-                        <button className='flex items-center gap-[8px] bg-[#06202E] text-[#FFFFFF] px-[16px] py-[8px] rounded-[8px]'>
-                            +2347072779831
+                        <button
+                            onClick={handleCallClick}
+                            className='flex items-center gap-[8px] bg-[#06202E] text-[#FFFFFF] px-[16px] py-[8px] rounded-[8px] hover:bg-[#1a3a4e] transition-colors'
+                        >
+                            Talk-to-ResQ
                             <img src={phone} alt="phone" className='w-[16px] h-[16px]' />
                         </button>
                     </div>
