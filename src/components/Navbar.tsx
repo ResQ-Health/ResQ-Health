@@ -14,21 +14,58 @@ const Navbar = () => {
         window.location.href = 'tel:+2347072779831';
     }
 
+    const scrollToSection = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+            setIsMenuOpen(false);
+        }
+    }
+
     return (
-        <div className='w-full bg-[#FFFFFF] px-4 sm:px-6 md:px-[64px] py-[14px]'>
+        <div className='w-full bg-[#FFFFFF] px-4 sm:px-6 md:px-[64px] py-[14px] sticky top-0 z-50'>
             <div className='flex justify-between items-center'>
                 <div className='flex items-center gap-4'>
                     <img src={logo} alt="logo" className='w-[102px] h-[36px]' />
                 </div>
 
                 {/* Desktop Menu */}
-                {/* <div className='hidden md:block'>
-                    <ul className='flex items-center gap-[32px]'>
-                        <li><Link to="/services">Services</Link></li>
-                        <li><Link to="/about">About Us</Link></li>
-                        <li><Link to="/business">Business</Link></li>
-                    </ul>
-                </div> */}
+                <div className='hidden md:block'>
+                    {/* <ul className='flex items-center gap-[32px]'>
+                        <li>
+                            <button
+                                onClick={() => scrollToSection('how-it-works')}
+                                className='text-[#06202E] hover:text-[#1a3a4e] transition-colors'
+                            >
+                                How It Works
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                onClick={() => scrollToSection('testimonials')}
+                                className='text-[#06202E] hover:text-[#1a3a4e] transition-colors'
+                            >
+                                Testimonials
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                onClick={() => scrollToSection('articles')}
+                                className='text-[#06202E] hover:text-[#1a3a4e] transition-colors'
+                            >
+                                Articles
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                onClick={() => scrollToSection('faq')}
+                                className='text-[#06202E] hover:text-[#1a3a4e] transition-colors'
+                            >
+                                FAQ
+                            </button>
+                        </li>
+                    </ul> */}
+                </div>
 
                 {/* Phone Button - Desktop */}
                 <div className='hidden md:block'>
@@ -64,9 +101,38 @@ const Navbar = () => {
             {isMenuOpen && (
                 <div className='md:hidden mt-4 pb-4'>
                     <ul className='flex flex-col gap-4'>
-                        {/* <li className='py-2'><Link to="/services">Services</Link></li>
-                        <li className='py-2'><Link to="/about">About Us</Link></li>
-                        <li className='py-2'><Link to="/business">Business</Link></li> */}
+                        <li className='py-2'>
+                            <button
+                                onClick={() => scrollToSection('how-it-works')}
+                                className='text-[#06202E] hover:text-[#1a3a4e] transition-colors'
+                            >
+                                How It Works
+                            </button>
+                        </li>
+                        <li className='py-2'>
+                            <button
+                                onClick={() => scrollToSection('testimonials')}
+                                className='text-[#06202E] hover:text-[#1a3a4e] transition-colors'
+                            >
+                                Testimonials
+                            </button>
+                        </li>
+                        <li className='py-2'>
+                            <button
+                                onClick={() => scrollToSection('articles')}
+                                className='text-[#06202E] hover:text-[#1a3a4e] transition-colors'
+                            >
+                                Articles
+                            </button>
+                        </li>
+                        <li className='py-2'>
+                            <button
+                                onClick={() => scrollToSection('faq')}
+                                className='text-[#06202E] hover:text-[#1a3a4e] transition-colors'
+                            >
+                                FAQ
+                            </button>
+                        </li>
                     </ul>
                     <div className='mt-4'>
                         <button

@@ -114,8 +114,10 @@ const Home = () => {
                     <Card1 title="Support Beyond Diagnosis" description2="Talk to your Resq Guide" description="At Resq, we believe in providing ongoing support beyond your initial consultation." items={[`Schedule follow-up appointments based on specialist recommendations`, `Step by step guidance from booking to  confirmation.`, `Dedicated patient support team available via phone/email/chat.`, `24/7 concierge for questions and guidance`]} image="./card11.png" />
                 </div>
             </div>
-            <HowItWorks />
-            <div className='w-full bg-[#F7F8FA] pt-[96px] pb-[114px] px-[24px] md:px-[64px]'>
+            <section id="how-it-works">
+                <HowItWorks />
+            </section>
+            <section id="testimonials" className='w-full bg-[#F7F8FA] pt-[96px] pb-[114px] px-[24px] md:px-[64px]'>
                 <h1 className='text-[32px] text-center text-[#06202E] font-[600] mb-12'>Hear from Users who have experienced ResQ's quality healthcare services</h1>
                 <div className='mt-[72px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
                     {testimonials.map((testimonial, index) => (
@@ -127,9 +129,9 @@ const Home = () => {
                         />
                     ))}
                 </div>
-            </div>
+            </section>
 
-            <div className='w-full pt-[80px] px-[24px] md:px-[64px]'>
+            <section id="articles" className='w-full pt-[80px] px-[24px] md:px-[64px]'>
                 <h1 className=' md:text-[32px] text-[32px] text-center text-[#06202E] font-[600] mb-[8px]'>Read top articles from health experts</h1>
                 <p className='md:text-[24px] text-[18px] text-center text-[#06202E] font-[400]'>Health articles that keep you informed about good health practices and achieve your goals.</p>
 
@@ -179,8 +181,10 @@ const Home = () => {
                         </button>
                     )}
                 </div>
-            </div>
-            <FAQ />
+            </section>
+            <section id="faq">
+                <FAQ />
+            </section>
             <Footer />
         </div>
     )
