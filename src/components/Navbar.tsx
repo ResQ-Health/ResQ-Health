@@ -58,9 +58,9 @@ const Navbar = () => {
             {isMenuOpen && (
                 <div className='md:hidden mt-4 pb-4'>
                     <ul className='flex flex-col gap-4'>
-                        <li className='py-2'><Link to="/services">Services</Link></li>
+                        {/* <li className='py-2'><Link to="/services">Services</Link></li>
                         <li className='py-2'><Link to="/about">About Us</Link></li>
-                        <li className='py-2'><Link to="/business">Business</Link></li>
+                        <li className='py-2'><Link to="/business">Business</Link></li> */}
                     </ul>
                     <div className='mt-4'>
                         <button className='flex items-center gap-[8px] bg-[#06202E] text-[#FFFFFF] px-[16px] py-[8px] rounded-[8px]'>
