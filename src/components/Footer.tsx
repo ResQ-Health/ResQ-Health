@@ -61,6 +61,8 @@ const footerLinks: FooterSection[] = [
     }
 ];
 
+
+
 const Footer = () => {
     return (
         <div className='w-full bg-[#06202E] text-white py-[64px] px-[24px] md:px-[64px]'>
