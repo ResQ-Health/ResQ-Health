@@ -99,12 +99,12 @@ const articles = [
 
 const Home = () => {
     const [showAll, setShowAll] = useState(false);
-
+    // home
     return (
         <div className='w-full overflow-x-hidden'>
             <Hero />
             <Partners />
-            <div className='w-full px-[24px] md:px-[64px]'>
+            <div className='w-full px-[24px]  md:px-[64px]'>
                 <Card1 description2='' items={[]} title="Reduce wait time with ResQ" description="We understand that timely diagnosis is crucial for effective treatment. ResQ connects you with healthcare facilities offering same-day or next-day appointments for various diagnostic services:" image="./card1a.png" />
                 <div className='flex  md:flex-row flex-col justify-center gap-[24px] items-center mt-[32px]' >
                     <Card2 title="Book the Right Test Quickly" description1="" description2="Book Your Test Now" list={["Personalized recommendations on your tests and providers", "Step by step guidance from booking to  confirmation."]} image="./cardb2.png" />
