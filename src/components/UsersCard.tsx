@@ -13,8 +13,8 @@ const UsersCard: React.FC<UsersCardProps> = ({ name, description, image }) => {
                 <img src={`./quote.png`} alt={name} className=" w-[68px]  md:w-[96.0px] h-[44px] md:h-[69px] " />
                 <img src={image} alt={name} className="size-[42px] md:size-[84px] " />
             </div>
-            <p className="text-[16px] leading-[24px] font-[500] text-[#06202E]] mb-2">{description}</p>
-            <h3 className="text-[20px] font-semibold text-[#06202E]">{name}</h3>
+            <p className="text-[16px] md:text-[16px] leading-[22px] md:leading-[24px] font-[400] md:font-[500] text-[#06202E]] mb-2">{description}</p>
+            <h3 className="text-[18px] md:text-[20px] font-semibold text-[#06202E]">{name}</h3>
         </div>
     )
 }

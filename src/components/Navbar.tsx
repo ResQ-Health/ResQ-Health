@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import logo from '/logo.png'
 import phone from '/call.png'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)

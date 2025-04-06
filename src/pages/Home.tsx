@@ -118,7 +118,7 @@ const Home = () => {
                 <HowItWorks />
             </section>
             <section id="testimonials" className='w-full bg-[#F7F8FA] pt-[96px] pb-[114px] px-[24px] md:px-[64px]'>
-                <h1 className='text-[32px] text-center text-[#06202E] font-[600] mb-12'>Hear from Users who have experienced ResQ's quality healthcare services</h1>
+                <h1 className='text-[24px] md:text-[32px] text-center text-[#06202E] font-[600] mb-12'>Hear from Users who have experienced ResQ's quality healthcare services</h1>
                 <div className='mt-[72px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center'>
                     {testimonials.map((testimonial, index) => (
                         <UsersCard
@@ -132,29 +132,29 @@ const Home = () => {
             </section>
 
             <section id="articles" className='w-full pt-[80px] px-[24px] md:px-[64px]'>
-                <h1 className=' md:text-[32px] text-[32px] text-center text-[#06202E] font-[600] mb-[8px]'>Read top articles from health experts</h1>
-                <p className='md:text-[24px] text-[18px] text-center text-[#06202E] font-[400]'>Health articles that keep you informed about good health practices and achieve your goals.</p>
+                <h1 className='text-[24px] md:text-[32px] text-center text-[#06202E] font-[600] mb-[8px]'>Read top articles from health experts</h1>
+                <p className='text-[16px] md:text-[24px] text-center text-[#06202E] font-[400]'>Health articles that keep you informed about good health practices and achieve your goals.</p>
 
                 <div className='mt-[40px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
                     {articles.slice(0, showAll ? articles.length : 3).map((article, index) => (
                         <div key={index} className='flex flex-col text-[#586A73] bg-[#F6F8FA]
-                         min-h-[428px] gap-[16px]'>
+                         md:min-h-[428px] min-h-fit pb-[32px] gap-[16px]'>
                             <img src={article.image} className='w-full rounded-t-[8px] h-[216px] object-cover' alt={article.title} />
                             <div className='pl-[16px]'>
                                 <div className=''>
                                     <ul>
                                         <li className='flex items-center gap-[8px]'>
-                                            {article.category}
+                                            <span className="text-[16px] md:text-[16px]">{article.category}</span>
                                             <div className='text-[#06202E]'>
                                                 <div className='size-[4px] rounded-full bg-[#586A73]'></div>
                                             </div>
-                                            {article.date}
+                                            <span className="text-[16px] md:text-[16px]">{article.date}</span>
                                         </li>
                                     </ul>
                                 </div>
-                                <h3 className=' md:text-[24px] text-[20px] text-[#06202E] font-[600]'>{article.title}</h3>
-                                <p>{article.description}</p>
-                                <div className='flex items-center mt-[8px] text-[14px] font-[500] gap-[8px]'>
+                                <h3 className='text-[18px] md:text-[24px] text-[#06202E] font-[600]'>{article.title}</h3>
+                                <p className='text-[16px] md:text-[16px] my-[8px] leading-[20px] md:leading-[24px]'>{article.description}</p>
+                                <div className='flex items-center mt-[8px] text-[16px] font-[500] gap-[8px]'>
                                     <img className='size-[32px]' src={article.authorImage} alt={article.author} />
                                     <p>By {article.author}</p>
                                 </div>
@@ -167,7 +167,7 @@ const Home = () => {
                     {!showAll && articles.length > 3 && (
                         <button
                             onClick={() => setShowAll(true)}
-                            className='px-8 py-3 bg-[#06202E] text-white rounded-lg hover:bg-[#1a3a4e] transition-colors duration-300'
+                            className='px-8 py-3 bg-[#06202E] text-white rounded-lg hover:bg-[#1a3a4e] transition-colors duration-300 text-[14px] md:text-[16px]'
                         >
                             See All Articles
                         </button>
@@ -175,7 +175,7 @@ const Home = () => {
                     {showAll && (
                         <button
                             onClick={() => setShowAll(false)}
-                            className='px-8 py-3 bg-[#06202E] text-white rounded-lg hover:bg-[#1a3a4e] transition-colors duration-300'
+                            className='px-8 py-3 bg-[#06202E] text-white rounded-lg hover:bg-[#1a3a4e] transition-colors duration-300 text-[14px] md:text-[16px]'
                         >
                             See Less
                         </button>

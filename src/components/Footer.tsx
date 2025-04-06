@@ -66,7 +66,7 @@ const footerLinks: FooterSection[] = [
 const Footer = () => {
     return (
         <div className='w-full bg-[#06202E] text-white py-[64px] px-[24px] md:px-[64px]'>
-            <div className='w-full bg-[#06202E] text-white py-[64px] px-[24px] md:px-[64px]'>
+            <div className='w-full bg-[#06202E] text-white  '>
                 <div className='flex flex-col md:flex-row justify-between gap-8 md:gap-[221px]'>
                     <div className='flex flex-col gap-4'>
                         <img src="./logo2.png" alt="ResQ Logo" className='w-[120px]' />
