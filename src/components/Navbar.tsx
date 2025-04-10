@@ -11,7 +11,7 @@ const Navbar = () => {
     }
 
     const handleCallClick = () => {
-        window.location.href = 'tel:+2347072779831';
+        window.location.href = 'tel:+2347068393906';
     }
 
     const scrollToSection = (sectionId: string) => {

@@ -12,7 +12,7 @@ const Card2: React.FC<Card2Props> = ({ title, description1, description2, list, 
 
     const handleWhatsAppClick = (e: React.MouseEvent) => {
         e.preventDefault();
-        const phoneNumber = "+2347072779831";
+        const phoneNumber = "+2347068393906";
         const message = "Hi, I want to book a test with ResQ. Can you help me with the next steps?";
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');

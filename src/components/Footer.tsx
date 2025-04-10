@@ -53,8 +53,8 @@ const footerLinks: FooterSection[] = [
                 isEmail: true
             },
             {
-                text: "+2347072779831",
-                url: "tel:+2347072779831",
+                text: "+2347068393906",
+                url: "tel:+2347068393906",
                 isPhone: true
             }
         ]

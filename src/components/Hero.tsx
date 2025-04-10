@@ -4,7 +4,7 @@ const Hero = () => {
     const items = ['Find', 'Scan', 'Consult', 'Resolve']
 
     const handleBookClick = () => {
-        const phoneNumber = "+2347072779831";
+        const phoneNumber = "+2347068393906";
         const message = "Hello, I would like to book a diagnostic scan with ResQ.";
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
