@@ -12,13 +12,13 @@ const Partners = () => {
         { src: '/p2.png', alt: 'Erom' },
         { src: '/p3.png', alt: 'Reliance HMO' },
         { src: '/foremost.png', alt: 'foremost' },
-        { src: '/p4.', alt: 'marigold' },
+        { src: '/mari.png', alt: 'marigold' },
 
     ];
 
     return (
         <div className='md:p-[64px] py-[56px] lg:p-[64px] w-full'>
-            <div className='px-4 sm:px-8 rounded-[16px] border-[1px] border-[#E1E3E6] :bg-[#F6F8FA] lg:px-[85px] py-[20px] w-full'>
+            <div className='px-4 sm:px-8 rounded-[0px] border-[1px] border-[#E1E3E6] :bg-[#F6F8FA] lg:px-[85px] py-[20px] w-full'>
                 <div className='px-4 sm:px-8 w-full overflow-hidden'>
                     <div className='scroll-container'>
                         <div className='scroll-content'>

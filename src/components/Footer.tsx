@@ -15,33 +15,32 @@ const footerLinks: FooterSection[] = [
         title: "Services",
         links: [
             { text: "CT Scan" },
-            { text: "MRI Scan" },
+            { text: "MRI" },
+            { text: "Mammogram" },
             { text: "X-Ray" },
-            { text: "Blood Tests" },
-            { text: "Ultrasound" },
-            { text: "ECG" }
+            { text: "Consultation" },
+            // { text: "ECG" }
         ]
     },
     {
         title: "About Us",
         links: [
-            { text: "Our Story" },
-            { text: "Our Mission" },
-            { text: "Our Team" },
-            { text: "Careers" },
-            { text: "Press" },
-            { text: "Blog" }
+            { text: "ResQ Story" },
+            { text: "FAQ" },
+            { text: "Partners" },
+            // { text: "Careers" },
+            // { text: "Press" },
+            // { text: "Blog" }
         ]
     },
     {
-        title: "Support",
+        title: "Business",
         links: [
-            { text: "Contact Us" },
-            { text: "Help Center" },
-            { text: "FAQs" },
-            { text: "Terms of Service" },
-            { text: "Privacy Policy" },
-            { text: "Patient Rights" }
+            { text: "Hospitals" },
+            { text: "Imaging Centers" },
+            { text: "Referring Partners" },
+            // { text: "Privacy Policy" },
+            // { text: "Patient Rights" }
         ]
     },
     {
@@ -70,8 +69,33 @@ const Footer = () => {
                 <div className='flex flex-col md:flex-row justify-between gap-8 md:gap-[221px]'>
                     <div className='flex flex-col gap-4'>
                         <img src="./logo2.png" alt="ResQ Logo" className='w-[120px]' />
-                        <p className='text-[14px] text-[#E6E9EA] max-w-[300px]'>Your trusted partner in healthcare, making medical services accessible and efficient.</p>
+                        <p className='text-[14px] md:text-[24px] font-[500] leading-[32px] md:leading-[38.4px] max-w-[388px] text-[#E6E9EA] '>Your Diagnostic Journey Begins  with  One Search.</p>
+
+                        <ul className='flex gap-[16px] items-center'>
+                            <li>
+                                <a href="https://x.com/Medresqhealth" target="_blank" rel="noopener noreferrer">
+                                    <img src={'./x.png'} className='w-[24px] h-[24px]' alt="X (Twitter)" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/medresq-healthcare/" target="_blank" rel="noopener noreferrer">
+                                    <img src={'./linkdein.png'} className='w-[24px] h-[24px]' alt="LinkedIn" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/medresqhealthcare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" rel="noopener noreferrer">
+                                    <img src={'./insta.png'} className='w-[24px] h-[24px]' alt="Instagram" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://medium.com/@medresqhealthcare" target="_blank" rel="noopener noreferrer">
+                                    <img src={'./medium.png'} className='w-[24px] h-[24px]' alt="Medium" />
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+
+
 
                     <div className='grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-[56px]'>
                         {footerLinks.map((section, index) => (
