@@ -16,6 +16,7 @@ export default defineConfig({
     allowedHosts: ["resqhealth.africa", "www.resqhealth.africa", "resq-health-staging.onrender.com", ".onrender.com"]
   },
   build: {
-    outDir: 'dist', // or whatever your output directory should be
+    outDir: 'dist',
+    assetsDir: 'landing-assets',
   }
 })

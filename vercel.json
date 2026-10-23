@@ -1,0 +1,140 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/assets/:path*",
+      "destination": "https://resq-client.vercel.app/assets/:path*"
+    },
+    {
+      "source": "/icons/:path*",
+      "destination": "https://resq-client.vercel.app/icons/:path*"
+    },
+    {
+      "source": "/(hospital.jpg|paystack.png|success.png|google.png)",
+      "destination": "https://resq-client.vercel.app/$1"
+    },
+    {
+      "source": "/provider/:path*",
+      "destination": "https://resq-client.vercel.app/provider/:path*"
+    },
+    {
+      "source": "/provider",
+      "destination": "https://resq-client.vercel.app/provider"
+    },
+    {
+      "source": "/providers/:path*",
+      "destination": "https://resq-client.vercel.app/providers/:path*"
+    },
+    {
+      "source": "/providers",
+      "destination": "https://resq-client.vercel.app/providers"
+    },
+    {
+      "source": "/welcome-provider",
+      "destination": "https://resq-client.vercel.app/welcome-provider"
+    },
+    {
+      "source": "/patient/:path*",
+      "destination": "https://resq-client.vercel.app/patient/:path*"
+    },
+    {
+      "source": "/patient",
+      "destination": "https://resq-client.vercel.app/patient"
+    },
+    {
+      "source": "/patientSetup/:path*",
+      "destination": "https://resq-client.vercel.app/patientSetup/:path*"
+    },
+    {
+      "source": "/search/:path*",
+      "destination": "https://resq-client.vercel.app/search/:path*"
+    },
+    {
+      "source": "/search",
+      "destination": "https://resq-client.vercel.app/search"
+    },
+    {
+      "source": "/Sign-in-Patient",
+      "destination": "https://resq-client.vercel.app/Sign-in-Patient"
+    },
+    {
+      "source": "/sign-in-patient",
+      "destination": "https://resq-client.vercel.app/sign-in-patient"
+    },
+    {
+      "source": "/login",
+      "destination": "https://resq-client.vercel.app/login"
+    },
+    {
+      "source": "/signin",
+      "destination": "https://resq-client.vercel.app/signin"
+    },
+    {
+      "source": "/verify",
+      "destination": "https://resq-client.vercel.app/verify"
+    },
+    {
+      "source": "/forgot-password",
+      "destination": "https://resq-client.vercel.app/forgot-password"
+    },
+    {
+      "source": "/reset-password",
+      "destination": "https://resq-client.vercel.app/reset-password"
+    },
+    {
+      "source": "/booking-history",
+      "destination": "https://resq-client.vercel.app/booking-history"
+    },
+    {
+      "source": "/calendar",
+      "destination": "https://resq-client.vercel.app/calendar"
+    },
+    {
+      "source": "/favourites",
+      "destination": "https://resq-client.vercel.app/favourites"
+    },
+    {
+      "source": "/account",
+      "destination": "https://resq-client.vercel.app/account"
+    },
+    {
+      "source": "/onboardingPatient",
+      "destination": "https://resq-client.vercel.app/onboardingPatient"
+    },
+    {
+      "source": "/payment/:path*",
+      "destination": "https://resq-client.vercel.app/payment/:path*"
+    },
+    {
+      "source": "/support",
+      "destination": "https://resq-client.vercel.app/support"
+    },
+    {
+      "source": "/terms-and-policy",
+      "destination": "https://resq-client.vercel.app/terms-and-policy"
+    },
+    {
+      "source": "/((?!landing-assets|assets|icons).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://www.resqhealth.africa https://resqhealth.africa https://ref.resqhealth.africa"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+        }
+      ]
+    }
+  ]
+}
